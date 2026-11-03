@@ -1,0 +1,173 @@
+{
+  "system": "oss120",
+  "strategy": "single",
+  "model": "gpt-oss-120b",
+  "run_overrides": {
+    "max_tokens": 8000
+  },
+  "models": {
+    "gpt-6.1-sol": {
+      "provider": "bedrock",
+      "model": "us.openai.gpt-6.1-sol",
+      "price_in": 2.2,
+      "price_out": 11.0,
+      "price_cache_read": 0.11,
+      "price_cache_write": 2.75,
+      "params": {
+        "max_tokens": 32000
+      }
+    },
+    "claude-opus-5.5": {
+      "provider": "bedrock",
+      "model": "us.anthropic.claude-opus-5-5",
+      "price_in": 4.0,
+      "price_out": 20.0,
+      "price_cache_read": 0.2,
+      "price_cache_write": 5.0,
+      "params": {
+        "max_tokens": 32000
+      }
+    },
+    "gpt-oss-120b": {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/gpt-oss-120b",
+      "price_in": 0.15,
+      "price_out": 0.6,
+      "price_cache_read": 0.015,
+      "params": {
+        "max_tokens": 16000,
+        "reasoning_effort": "medium"
+      }
+    },
+    "nemotron-lightning": {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b",
+      "size_b": 31.58,
+      "family": "Nemotron",
+      "price_in": 0.05,
+      "price_cache_read": 0.01,
+      "price_out": 0.2,
+      "params": {
+        "max_tokens": 8000,
+        "reasoning_effort": "medium"
+      }
+    },
+    "qwen3-0.6b": {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/qwen3-0p6b",
+      "size_b": 0.75,
+      "family": "Qwen 3",
+      "price_in": 0.1,
+      "price_out": 0.1,
+      "params": {
+        "max_tokens": 16000
+      }
+    },
+    "ministral-3b": {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/ministral-3-3b-instruct-2512",
+      "size_b": 3.0,
+      "family": "Mistral",
+      "price_in": 0.1,
+      "price_out": 0.1,
+      "params": {
+        "max_tokens": 16000
+      }
+    },
+    "llama3.2-3b": {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/llama-v3p2-3b-instruct",
+      "size_b": 3.61,
+      "family": "Llama",
+      "price_in": 0.1,
+      "price_out": 0.1,
+      "params": {
+        "max_tokens": 16000
+      }
+    },
+    "qwen3-4b": {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/qwen3-4b",
+      "size_b": 4.41,
+      "family": "Qwen 3",
+      "price_in": 0.2,
+      "price_out": 0.2,
+      "params": {
+        "max_tokens": 16000
+      }
+    },
+    "qwen3-8b": {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/qwen3-8b",
+      "size_b": 8.19,
+      "family": "Qwen 3",
+      "price_in": 0.2,
+      "price_out": 0.2,
+      "params": {
+        "max_tokens": 16000
+      }
+    },
+    "llama3.1-8b": {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/llama-v3p1-8b-instruct",
+      "size_b": 8.84,
+      "family": "Llama",
+      "price_in": 0.2,
+      "price_out": 0.2,
+      "params": {
+        "max_tokens": 16000
+      }
+    },
+    "qwen3.5-9b": {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/qwen3p5-9b",
+      "size_b": 9.41,
+      "family": "Qwen 3.5",
+      "price_in": 0.2,
+      "price_out": 0.2,
+      "params": {
+        "max_tokens": 16000
+      }
+    },
+    "qwen3-14b": {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/qwen3-14b",
+      "size_b": 14.77,
+      "family": "Qwen 3",
+      "price_in": 0.2,
+      "price_out": 0.2,
+      "params": {
+        "max_tokens": 16000
+      }
+    },
+    "qwen3-32b": {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/qwen3-32b",
+      "size_b": 32.76,
+      "family": "Qwen 3",
+      "price_in": 0.9,
+      "price_out": 0.9,
+      "params": {
+        "max_tokens": 16000
+      }
+    },
+    "yks-sft": {
+      "provider": "fireworks",
+      "model": "accounts/YOUR_ACCOUNT/models/yks-sft-qwen3-8b",
+      "finetuned_from": "qwen3-8b",
+      "size_b": 8.19,
+      "family": "Qwen 3",
+      "label": "Qwen3-8B + YKS SFT (ours)",
+      "billing": "gpu_hour",
+      "gpu_hour_usd": 7.0,
+      "gpus": 1,
+      "params": {
+        "max_tokens": 16000
+      }
+    }
+  },
+  "dataset": "yks",
+  "split": "test",
+  "repeats": 1,
+  "started": "2026-11-02 12:55:41 PST"
+}

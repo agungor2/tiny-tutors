@@ -1,0 +1,21 @@
+{
+  "job_id": "yks-sft-1320",
+  "base": "nemotron-lightning-3p5-30b-a3b",
+  "output_model": "accounts/YOUR_FIREWORKS_ACCOUNT/models/yks-sft-nemotron",
+  "train_dataset": "yks-sft-train-1320",
+  "val_dataset": "yks-sft-val-1320",
+  "data": {
+    "attempts": 600,
+    "kept": 575,
+    "train": 517,
+    "val": 58,
+    "bad_json": 0,
+    "disagree": 3,
+    "contaminated": 22,
+    "duplicate": 0,
+    "generator": "gpt-6.1-sol",
+    "verifier": "claude-opus-5.5",
+    "est_cost_usd": 15.81
+  },
+  "submitted": "13:20:44"
+}

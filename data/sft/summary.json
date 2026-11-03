@@ -1,0 +1,13 @@
+{
+  "attempts": 600,
+  "kept": 575,
+  "train": 517,
+  "val": 58,
+  "bad_json": 0,
+  "disagree": 3,
+  "contaminated": 22,
+  "duplicate": 0,
+  "generator": "gpt-6.1-sol",
+  "verifier": "claude-opus-5.5",
+  "est_cost_usd": 15.81
+}

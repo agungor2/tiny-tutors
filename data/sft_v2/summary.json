@@ -1,0 +1,19 @@
+{
+  "train": {
+    "source_rows": 517,
+    "kept": 481
+  },
+  "val": {
+    "source_rows": 58,
+    "kept": 50
+  },
+  "teacher": "accounts/fireworks/models/gpt-oss-120b",
+  "tries": 2,
+  "kept": 531,
+  "wrong": 34,
+  "error": 116,
+  "in_tok": 190260,
+  "out_tok": 1061669,
+  "est_cost_usd": 0.67,
+  "built": "14:11:26"
+}

@@ -1,0 +1,19 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# Raw downloads are re-creatable; keep data/eval.jsonl and results/ committed as evidence
+data/raw/
+# Tutor app: student data + teacher-reviewed exports stay local (privacy)
+data/app.db
+data/feedback/
+# MathArena olympiad sets are CC BY-NC-SA 4.0: re-download with `python -m yks.olympiad`, don't commit
+data/olympiad/
+
+.tools/
+
+
+
+# account-specific / local artifacts
+results/**/report_stdout.txt

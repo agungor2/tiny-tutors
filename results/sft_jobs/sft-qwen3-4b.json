@@ -1,0 +1,1 @@
+{"job_id": "yks-sft-qwen3-4b-1334", "base": "qwen3-4b", "output_model": "accounts/YOUR_FIREWORKS_ACCOUNT/models/yks-sft-qwen3-4b", "train_dataset": "yks-sft-train-1320", "val_dataset": "yks-sft-val-1320"}
